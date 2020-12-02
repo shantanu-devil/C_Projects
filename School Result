@@ -1,0 +1,111 @@
+//
+//  main.c
+//  Total marks and percentage.
+//
+//  Created by Shantanu Patil on 19/02/20.
+//  Copyright © 2020 Shantanu Patil. All rights reserved.
+//
+
+#include <stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int s1=0,s2,s3,s4,s5,t,count=0;
+    float per;
+    
+    printf("Enter your marks in English \n");
+    scanf("%d",&s1);
+    
+    
+        while (s1>100)
+        {
+            printf("Please re-enter your marks in English \n");
+            scanf("%d",&s1);
+            count=count+1;
+            if (count>1 && s1 > 100)
+            {
+                printf("Exceeded your attempts \n");
+                exit(0);
+            }
+            count=count+1;
+        }
+    
+    printf("Enter your marks in Maths \n");
+    scanf("%d",&s2);
+    
+    count=0;
+    while (s2>100)
+    {
+        printf("Please re-enter your marks in Maths \n");
+        scanf("%d",&s2);
+        
+        if (count>2 && s2 > 100)
+        {
+            printf("Exceeded your attempts \n");
+            exit(0);
+            
+        }
+        count=count+1;
+        
+    }
+    
+    printf("Enter your marks in Science \n");
+    scanf("%d",&s3);
+    
+    count=0;
+    while (s3>100)
+    {
+        printf("Please re-enter your marks in Science \n");
+        scanf("%d",&s3);
+        count=count+1;
+        if (count>1 && s3 > 100)
+        {
+            printf("Exceeded your attempts \n");
+            exit(0);
+        }
+        count=count+1;
+    }
+   
+    printf("Enter your marks in Marathi \n");
+    scanf("%d",&s4);
+    
+    count=0;
+    while (s4>100)
+    {
+        printf("Please re-enter your marks in Marathi \n");
+        scanf("%d",&s4);
+        count=count+1;
+        if (count>1 && s4 > 100)
+        {
+            printf("Exceeded your attempts \n");
+            exit(0);
+        }
+        count=count+1;
+    }
+    
+    printf("Enter your marks in History \n");
+    scanf("%d",&s5);
+    
+    count=0;
+    while (s5>100)
+    {
+        printf("Please re-enter your marks in History \n");
+        scanf("%d",&s5);
+        count=count+1;
+        if (count>1 && s5 > 100)
+        {
+            printf("Exceeded your attempts \n");
+            exit(0);
+        }
+        count=count+1;
+    }
+    
+    t = s1+s2+s3+s4+s5;
+    
+    per =(s1+s2+s3+s4+s5)/5;
+    
+    printf("Your total marks = %d \n",t);
+    printf("Your Percentage = %f \n",per);
+    
+    return 0;
+}
