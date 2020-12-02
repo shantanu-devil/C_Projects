@@ -15,8 +15,6 @@ int main()
     printf("Enter the distance between two cities in Km \n");
     scanf("%d",&t);
     
-
-    
     m = t*1000;
     f = t*3280.84;
     i = t*39370.1;
@@ -26,7 +24,6 @@ int main()
     printf("Feet = %f \n",f);
     printf("Inches = %f \n",i);
     printf("Centimeters = %f \n",c);
-    
     
     return 0;
 }
